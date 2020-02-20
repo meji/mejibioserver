@@ -9,7 +9,7 @@ module.exports = (req, res) => {
       );
       if (error) return res.status(500).json({ message: "Hubo un error" });
       const token = generateToken(user)
-        return res.redirect('http://localhost:3000/admin?token='+token);
+        return res.redirect(process.env.PUBLICURI+'admin?token='+token);
       // Ejecutamos la función pasandole los parametros req y res
     })(req, res);
 };
