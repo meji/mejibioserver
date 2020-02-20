@@ -23,6 +23,7 @@ app.use(express.static(__dirname + '../uploads'));
 app.use(cors());
 
 app.set('view engine', 'jsx');
+app.set('views', path.join(__dirname, 'views'));
 app.engine('jsx', require('express-react-views').createEngine());
 
 app.use('/', require('./routes'));
