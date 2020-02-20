@@ -1,0 +1,64 @@
+{
+  "name": "mejibio",
+  "version": "1.0.0",
+  "description": "Meji Bio Page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js",
+    "build": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meji/mejiBio.git"
+  },
+  "keywords": [
+    "Meji",
+    "Bio",
+    "React"
+  ],
+  "author": "Jesús Martín Mejías",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meji/mejiBio/issues"
+  },
+  "homepage": "https://github.com/meji/mejiBio#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.7",
+    "concurrently": "^5.1.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-fileupload": "^1.1.6",
+    "express-react-views": "^0.11.0",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.8.6",
+    "mongoose-findorcreate": "^3.0.0",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.1",
+    "passport-github2": "^0.1.11",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "husky": "4.2.1",
+    "lint-staged": "10.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-media-variables": "^2.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "1.19.1"
+  }
+}
