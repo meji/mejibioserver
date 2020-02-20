@@ -2,17 +2,14 @@ require("dotenv").config();
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const mongoose = require("mongoose");
-const port = process.env.PORT || 5000;
+const mongoose = require('mongoose');
 const  cors = require('cors');
 const fileupload = require("express-fileupload");
 
 
-
 const app = express();
 require("./passport/config")(app);
-// console.log that your server is up and running
-app.listen(port, () => console.log(`Listening on port ${port}`));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
